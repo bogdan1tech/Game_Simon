@@ -1,0 +1,192 @@
+body {
+  font-family: "Squada One", sans-serif;
+  font-weight: bolder;
+}
+header {
+  text-align: center;
+  font-size: 20px;
+}
+h1 {
+  margin: 0%;
+}
+#guide {
+  margin: 0 auto;
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+
+
+#game-window {
+  display: grid;
+  grid-template-rows: 15px 125px 100px 325px 10px 50px;
+  grid-template-columns: 200px 200px 200px;
+}
+
+
+#top {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 3;
+  display: flex;
+  justify-content: center;
+}
+#top-grid {
+  display: grid;
+  grid-template-rows: 50px 10px 50px;
+  grid-template-columns: 150px 10px 150px 10px 150px;
+  text-align: center;
+}
+#theme-catagory {
+  border-right: 2px solid black;
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  font-size: 18px;
+}
+#theme-option-standard {
+  border: 2px solid black;
+  background: rgb(170, 170, 170);
+  grid-row: 1 / span 1;
+  grid-column: 3 / span 1;
+}
+#theme-option-space {
+  border: 2px solid black;
+  grid-row: 1 / span 1;
+  grid-column: 5 / span 1;
+}
+#mode-catagory {
+
+  grid-row: 1 / span 1;
+  grid-column: 3 / span 1;
+  font-size: 18px;
+}
+#mode-option-easy {
+  border: 2px solid black;
+  background: rgb(170, 170, 170);
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 1;
+}
+#mode-option-normal {
+  border: 2px solid black;
+  background: rgb(170, 170, 170);
+  grid-row: 3 / span 1;
+  grid-column: 3 / span 1;
+}
+#mode-option-hard {
+  border: 2px solid black;
+  background: white;
+  grid-row: 3 / span 1;
+  grid-column: 5 / span 1;
+}
+
+
+
+#score-box {
+  grid-row: 3 / span 1;
+  grid-column: 2 / span 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+#score-grid {
+  display: grid;
+  grid-template-rows: 45px 45px;
+  grid-template-columns: 100px;
+  text-align: center;
+}
+#score-title {
+  border: 2px solid black;
+  background: rgb(105, 215, 250);
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+}
+#score-counter {
+  border: 2px solid black;
+  background: white;
+  border-top: 0px;
+  color: rgb(221, 75, 62);
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+}
+
+
+#game-board {
+  background: black;
+  grid-row: 4 / span 1;
+  grid-column: 1 / span 3;
+  display: flex;
+  justify-content: center;
+  margin: auto 22%;
+}
+#game-grid {
+  display: grid;
+  grid-template-rows: 5px 125px 50px 125px 5px;
+  grid-template-columns: 125px 75px 125px;
+  text-align: center;
+}
+#green {
+  border: 2px solid rgb(62, 221, 75);
+  background: rgba(62, 221, 75, 0.8);
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+}
+#red {
+  border: 2px solid rgb(221, 75, 62);
+  background: rgba(221, 75, 62, 0.8);
+  grid-row: 2 / span 1;
+  grid-column: 3 / span 1;
+}
+#simon {
+  border: 2px solid rgb(170, 170, 170);
+  background: rgba(170, 170, 170, 0.9);
+  color: white;
+  grid-row: 3 / span 1;
+  grid-column: 2 / span 1;
+  hover:
+}
+#simon:hover { background: gold; }
+#simon:active {
+ 
+  transform: translate(0em, 0.2em);
+}
+#simon-on-div {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#yellow {
+  border: 2px solid rgb(255, 234, 55);
+  background: rgba(255, 234, 55, 0.8);
+  grid-row: 4 / span 1;
+  grid-column: 1 / span 1;
+}
+#blue {
+  border: 2px solid rgb(105, 215, 250);
+  background: rgba(105, 215, 250, 0.8);
+  grid-row: 4 / span 1;
+  grid-column: 3 / span 1;
+}
+
+
+#reset {
+  border: 3px solid black;
+  background: #FF0000;
+  grid-row: 6 / span 1;
+  grid-column: 2 / span 1;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 5% 0;
+  font-size: 15px;
+}
+#reset:hover { background: gold; }
+#reset:active {
+  transform: translate(0em, 0.2em);
+}
+
+
+@media only screen and (max-width: 600px) {
+  header {
+    font-size: 18px;
+  }
+  #top-grid {
+    grid-template-columns: 125px 10px 125px 10px 125px;
+  }
+}

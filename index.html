@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
+  <title>Simon</title>
+</head>
+<body>
+  <header>
+    <h2>Правила игры Саймон: смотри, запоминай, повторяй!</h1>
+    <p id="guide">[Нажми "СТАРТ" чтобы играть]</p>
+  </header>
+  <main>
+    <div id="game-window">
+      <div id="top">
+        <div id="top-grid">
+         
+          
+          <div class="js-space-switch-catagory" id="mode-catagory">
+            <p>Режим:</p>
+          </div>
+          <div class="js-space-switch" id="mode-option-easy">
+            <p>Легкий</p>
+          </div>
+          <div class="js-space-switch" id="mode-option-normal">
+            <p>Средний</p>
+          </div>
+          <div class="js-space-switch" id="mode-option-hard">
+            <p>Трудный</p>
+          </div>
+        </div>
+      </div>
+      <div id="score-box">
+        <div id="score-grid">
+          <div class="js-space-switch" id="score-title">
+            <p>Уровень</p>
+          </div>
+          <div class="js-space-switch" id="score-counter">
+            <p id="score-number">0</p>
+          </div>
+        </div>
+      </div>
+      <div class="js-space-switch" id="game-board">
+        <div id="game-grid">
+          <div class="game-div" id="green">
+          </div>
+          <div class="game-div" id="red">
+          </div>
+          <div id="simon">
+            <p id="simon-on-div">СТАРТ</p>
+          </div>
+          <div class="game-div" id="yellow">
+          </div>
+          <div class="game-div" id="blue">
+          </div>
+        </div>
+      </div>
+      <div class="js-space-switch" id="reset">
+        <p>Сначала</p>
+      </div>
+    </div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+<!-- тесты: -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
+<div id="demo">
+  <p>{{message}}</p>
+  <input v-model="message">
+</div>
+
+<script>
+ 
+function ready(f) {
+  /in/.test(document.readyState) ? setTimeout('ready(' + f + ')', 9) : f();
+}
+
+ready(function() {
+  var demo = new Vue({
+    el: '#demo',
+    data: {
+      message: 'Hello Vue.js!'
+    }
+  })
+});
+</script>
+
+</body>
+</html>
